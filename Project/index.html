@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=640,initial-scale=0.5,user-scalable=no">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="icon/apple-touch-icon-precomposed.png">
+	<title>Framer</title>
+	<style type="text/css" media="screen">
+
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			cursor: url('images/cursor.png') 39 39, auto;
+			/* cursor: -webkit-image-set( url(images/cursor.png) 1x, url(images/cursor@2x.png) 2x ) 39 39, auto; */
+			-webkit-user-select: none;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+
+		body {
+			background: black url('images/background.png') repeat scroll top left;
+			font: 300 28px/1em "Helvetica Neue", Helvetica;
+			-webkit-font-smoothing: antialiased;
+			color: #FFF;
+			/*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+			overflow: hidden;
+		}
+
+		a {
+			color: #bfbfbf;
+		}
+
+		.framerLayer {
+			cursor: pointer;
+			/* backface-visibility: hidden; */
+			image-rendering: optimizeSpeed;             /*                     */
+			image-rendering: -moz-crisp-edges;          /* Firefox             */
+			image-rendering: -o-crisp-edges;            /* Opera               */
+			image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+			image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+			-ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+		}
+
+		.framerLayer::-webkit-scrollbar {
+			display: none;
+			width: 0px;
+			height: 0px;
+		}
+		.framerLayer::-webkit-scrollbar-button {
+			display: none;
+			width: 0px;
+			height: 0px;
+		}
+		.framerLayer::-webkit-scrollbar-thumb {
+			display: none;
+			background: transparent;
+			border: 0px none transparent;
+			border-radius: 0px;
+		}
+		.framerLayer::-webkit-scrollbar-thumb:hover {
+			display: none;
+			background: transparent;
+		}
+		.framerLayer::-webkit-scrollbar-thumb:active {
+			display: none;
+			background: transparent;
+		}
+		.framerLayer::-webkit-scrollbar-track {
+			display: none;
+			background: transparent;
+			border: 0px none transparent;
+			border-radius: 0px;
+		}
+		.framerLayer::-webkit-scrollbar-track:hover {
+			display: none;
+			background: transparent;
+		}
+		.framerLayer::-webkit-scrollbar-track:active {
+			display: none;
+			background: transparent;
+		}
+		.framerLayer::-webkit-scrollbar-corner {
+			display: none;
+			background: transparent;
+		}
+
+	</style>
+</head>
+<body>
+	<script src="framer/framer.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

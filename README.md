@@ -1,2 +1,7 @@
 # FramerJs
-Setup Project FramerJs
+Setup Project for FramerJs
+
+> npm install
+
+> gulp
+
